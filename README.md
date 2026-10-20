@@ -23,7 +23,7 @@ In this lab, we learned how to implement a half-subtractor in verilog. We also l
 The difference between the half adder from last week and the half subtractor from this week is that the carry/borrows boolean equation is (~A & B) as compared to the carry's boolean equation from last week being (A & B).
 
 ### 2 - What about the end around carry of One’s Complement makes it hard to use and implement?
-It makes it hard to use because it forces us to connect the carry out from the last full adder and connect it back to the first full adder. This causes the implementation to be slow and somewhat confusing. 
+It makes it hard to use because it forces us to connect the carry out from the last full adder and connect it back to the first full adder which can cause our circuit to turn into a clock and loop for ever. The way to avoid this causes the implementation to be slow and somewhat confusing. 
 
 ### 3 - What is the edge case and problem with Two’s Complement number representation?
 The edge case with Two's compliment number representation is that the negative range has one extra value compared to the positive range. 0000 (0) ⇒ 1111 (-1). This means that using bitwise inversion will not work as intended. 
