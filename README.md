@@ -26,4 +26,4 @@ The difference between the half adder from last week and the half subtractor fro
 It makes it hard to use because it forces us to connect the carry out from the last full adder and connect it back to the first full adder. This causes the implementation to be slow and somewhat confusing. 
 
 ### 3 - What is the edge case and problem with Two’s Complement number representation?
-
+The edge case with Two's compliment number representation is that the negative range has one extra value compared to the positive range. 0000 (0) ⇒ 1111 (-1). This means that using bitwise inversion will not work as intended. 
